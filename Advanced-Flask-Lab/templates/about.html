@@ -25,6 +25,18 @@
 
 			</div>
 
+			<!-- Posts -->
+							
+                
+                <div>
+                	{%for post in posts%}
+                	<a href="">
+                        <img src="{{post}}" alt="" />
+                        <h3>{{posts[post]}}</h3>
+                        </a>
+               		{%endfor%}
+                </div>
+
 		<!-- Scripts -->
 			<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
 			<script src="static/js/jquery.poptrox.min.js"></script>
